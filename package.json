@@ -1,0 +1,22 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "Simple Front-End Countdown",
+  "main": "docs/index.js",
+  "repository": "https://github.com/jSilverize/countdown.git",
+  "author": "jsilverize <elvitous@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "harp": "^0.27.0",
+    "moment": "^2.22.2"
+  },
+  "scripts": {
+    "dev-dependencies": "npm install && cp -a ./node_modules/moment/min/. ./src/scripts/",
+    "prod-dependencies": "npm install && cp -a ./node_modules/moment/min/. ./docs/scripts/ && cp -a ./src/images/ ./docs/images/",
+    "compile": "harp compile ./src ./docs",
+    "server": "harp server ./src",
+    "build": "npm run prod-dependencies && npm run compile",
+    "start": "npm run server"
+  }
+}

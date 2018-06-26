@@ -1,0 +1,42 @@
+button.settings-toggle#toggle(type="button" onClick="toggleSettings()")
+    include ../images/icon_settings.svg
+
+div#settings.settings
+
+    div.container.fluid
+
+        div.p-35-top.p-20-bot.p-20-hor
+            h3 Settings
+
+        form.form(onsubmit="saveSettings();")
+
+            //- div.p-10-ver
+            //-     label.form__label#label-language(for="language") Língua
+            //-     select.form__control#language(name="language" required="true" onchange="languageChanged()")
+            //-         option(value="pt-BR") Português do Brasil
+            //-         option(value="") English
+
+            div.p-10-ver
+                label.form__label#label-countdown(for="countdown") Data
+                input.form__control#countdown(type="date" name="countdown" autocomplete="off" required="true")
+
+            div.p-10-ver
+                label.form__label#label-joint(for="joint") Junção
+                input.form__control#joint(type="text" name="joint" autocomplete="off")
+
+            div.p-10-ver
+                label.form__label#label-heading(for="heading") Texto Principal
+                input.form__control#heading(type="text" name="heading" autocomplete="off" required="true")
+
+            div.p-10-ver
+                label.form__label#label-subheading(for="subheading") Texto Secundário
+                input.form__control#subheading(type="text" name="subheading" autocomplete="off")
+
+            div.p-10-ver
+                label.form__label#label-background(for="background") URL para Imagem de Fundo
+                input.form__control#background(type="text" name="background" autocomplete="off")
+
+            div.p-20-ver.text-center
+                button(type="submit") Salvar
+
+

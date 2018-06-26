@@ -1,0 +1,49 @@
+/* Form
+-------------------------------------------------------------------------- */
+$this: ".form";
+
+#{$this} {
+    &__label {
+        display: block;
+        padding: 5px 20px;
+
+        font-size  : 13px;
+        line-height: 20px;
+
+        text-transform: uppercase;
+
+        [for] {
+            cursor: pointer;
+        }
+    }
+
+    &__control {
+        color     : $color-white;
+        background: rgba($color-black, .5);
+
+        border : 0;
+        outline: 0;
+
+        transition: all linear .25s;
+    }
+
+    select.form__control,
+    &__control[type="text"],
+    &__control[type="date"],
+    &__control[type="number"] {
+        display: block;
+        padding: 0 20px;
+        width  : 100%;
+        height : 40px;
+
+        font-size  : 16px;
+        line-height: 40px;
+
+        border-radius: 10px;
+
+        &:focus,
+        &:active {
+            box-shadow: inset 0 0 10px rgba($color-dark-grey, .1);
+        }
+    }
+}

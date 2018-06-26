@@ -1,0 +1,40 @@
+/* Flex
+-------------------------------------------------------------------------- */
+
+$this: ".image-blur";
+
+#{$this} {
+    display : block;
+    content : " ";
+    position: absolute;
+    z-index: -1;
+    top     : 0;
+    right   : 0;
+    bottom  : 0;
+    left    : 0;
+
+    width : inherit;
+    height: inherit;
+
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+
+    -webkit-filter: blur(8px);
+    -moz-filter   : blur(8px);
+    -o-filter     : blur(8px);
+    -ms-filter    : blur(8px);
+    filter        : blur(8px);
+
+    opacity       : 1;
+
+    transform: scale(1.2);
+
+    &-container {
+        position: relative;
+        z-index : 1;
+        overflow: hidden;
+
+        background: $color-primary-base;
+    }
+}

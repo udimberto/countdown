@@ -1,0 +1,19 @@
+/* Countdown
+-------------------------------------------------------------------------- */
+$this: ".countdown";
+
+#{$this} {
+    display: inline-block;
+    margin : 60px 0;
+    padding: 40px 60px;
+
+    background   : rgba($color-black, 0.15);
+    border-radius: 10px;
+
+    @include xs {
+        margin : 30px -#{$container-horizontal-padding};
+        padding: 20px;
+
+        border-radius: 0;
+    }
+}

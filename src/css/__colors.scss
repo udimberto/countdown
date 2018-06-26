@@ -1,0 +1,46 @@
+/* App Colors
+-------------------------------------------------------------------------- */
+
+// Default
+$color-white: #FFFFFF;
+$color-black: #222222;
+
+// Grey scale
+$color-light-smoke: #F8F8F8;
+$color-smoke      : #EEEEEE;
+$color-light-grey : #D4D7D9;
+$color-grey       : #9DA6AD;
+$color-dark-grey  : #7A8085;
+
+// Socials
+$color-social-facebook: #3A5795;
+$color-social-twitter : #1DA1F2;
+
+// Variations
+$color-yellow      : #FFC61E;
+$color-light-orange: #FF8D50;
+$color-orange      : #FCA311;
+$color-red         : #F13335;
+$color-blue        : #00A5DB;
+$color-green       : #60C659;
+
+
+/* App Colors Schema
+-------------------------------------------------------------------------- */
+
+// Primary
+$color-primary     : $color-white !default;
+$color-primary-base: $color-black !default;
+
+// Secondary
+$color-secondary     : $color-light-grey !default;
+$color-secondary-base: $color-dark-grey !default;
+
+// Info
+
+// Warning
+
+// Success
+
+// Error
+

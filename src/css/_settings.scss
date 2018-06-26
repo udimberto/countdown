@@ -1,0 +1,54 @@
+/* Settings
+-------------------------------------------------------------------------- */
+$this: ".settings";
+
+#{$this} {
+    position : absolute;
+    z-index  : 10;
+    top      : 0;
+    right    : -320px;
+    bottom   : 0;
+
+    min-width: 320px;
+    max-width: 320px;
+
+    transition: right .25s linear;
+
+    background: rgba($color-black, .5);
+
+    &-toggle {
+        position: absolute;
+        z-index : 20;
+        top     : 20px;
+        right   : 20px;
+
+        width : 80px;
+        height: 80px;
+
+        opacity: 0.15;
+
+        transition: all .25s linear;
+
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 1;
+        }
+
+        &.active {
+            right: 50px;
+        }
+    }
+
+    &.active {
+        right: 0;
+    }
+
+    @include xs {
+        &.active {
+            min-width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+

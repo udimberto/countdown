@@ -1,0 +1,43 @@
+/* Media Querie mixins
+-------------------------------------------------------------------------- */
+@mixin xs {
+    @media (max-width: #{$tablet-width - .1em}) {
+        @content;
+    }
+}
+
+@mixin xs-sm {
+    @media (max-width: #{$desktop-width - .1em}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - .1em}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$bigDesktop-width - .1em}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$bigDesktop-width}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$hugeDesktop-width}) {
+        @content;
+    }
+}
+
+@mixin print {
+    @media print {
+        @content;
+    }
+}
